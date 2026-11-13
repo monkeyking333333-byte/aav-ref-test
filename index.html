@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>aav 来源测试页</title>
+<style>body{font-family:sans-serif;padding:16px;font-size:16px;word-break:break-all}td{border:1px solid #ccc;padding:6px;vertical-align:top}th{text-align:left;padding:6px;width:30%}</style>
+</head><body>
+<h2>aav 来源测试页</h2>
+<p>请截图本页发回（不收集、不上传任何数据）。</p>
+<table id="t"></table>
+<script>
+var rows=[["打开时间",new Date().toString()],["完整网址",location.href],["document.referrer",document.referrer||"(空)"],["User-Agent",navigator.userAgent],["history.length",String(history.length)]];
+var t=document.getElementById("t");rows.forEach(function(r){var tr=document.createElement("tr");tr.innerHTML="<th></th><td></td>";tr.children[0].textContent=r[0];tr.children[1].textContent=r[1];t.appendChild(tr)});
+</script>
+</body></html>
